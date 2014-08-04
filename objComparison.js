@@ -27,6 +27,15 @@ function isEqual(obj1,obj2){
                         console.log(obj2[keys2[i]]);*/
                         continue;
                     }
+                    else if((typeof obj1[keys1[i]])  === 'function'){
+                         if(obj1[keys1[i]].toString  === obj2[keys2[i]].toString){
+                            continue;
+                         }
+                         else{
+                             console.log("line : \'"+keys1[i]+"\'");
+                             return false;
+                         }
+                    }
                     else{
                         console.log("line : \'"+keys1[i]+"\'");
                         return false;
@@ -39,7 +48,7 @@ function isEqual(obj1,obj2){
                     return false;
                 }
             }
-            if(!(typeof obj1[keys1[i]])=== (typeof obj2[keys2[i]])){
+            if(!((typeof obj1[keys1[i]]) === (typeof obj2[keys2[i]]))){
                 console.log("line : \'"+keys1[i]+"\':"+obj1[keys1[i]])
                 return false;
             }
