@@ -18,10 +18,10 @@ function isEqual(obj1,obj2){
         for(var i=0; i<len;i++){
             if(!(typeof obj1[keys1[i]] === "object") && !(typeof obj2[keys2[i]] === "object")){
                 if((typeof obj1[keys1[i]]) === (typeof obj2[keys2[i]])) {
-                    console.log(typeof obj1[keys1[i]]);
+                   /* console.log(typeof obj1[keys1[i]]);
                     console.log(typeof obj2[keys2[i]]);
                     console.log(obj1[keys1[i]]);
-                    console.log(obj2[keys2[i]]);
+                    console.log(obj2[keys2[i]]);*/
                     if (obj1[keys1[i]] == obj2[keys2[i]]) {
                         /*console.log(obj1[keys1[i]]);
                         console.log(obj2[keys2[i]]);*/
